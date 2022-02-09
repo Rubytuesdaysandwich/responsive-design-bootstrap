@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Rueben &and; Durfee" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Home</title>
+    <!--custom css-->
+    <style>
+      #mod-header{
+        border-top: solid green 16px;
+      }
+      /* effects the modal section with a border top and bottom of 16px green */
+      .modal-content{
+        border-bottom:solid green 16px;
+      }
+    </style>
+<!--end custom css-->
+   
+  <body> 
+      <!--====================================== header section================================================================-->
+    <header>
+      <div class="container bg-light"><!--container for img riverside inn and header section-->
+        <div class="row"><!--row start-->
+          <div class="col-4 m-auto "><!--tagline section-->
+            <hr>
+      <p>winner of the travelers inn and restraunt Twice Over!</p><!--tagline-->
+      <hr>
+    </div><!--end tagline section-->
+    <div class="col-4 align-content-center"><!--logo-->
+    <img class=" p-5 fluid-img w-100 justify-content-center align-content-center" src="img/logo.png" alt="River side inn steak house established 1972" />
+  </div><!--logo end-->
+  <div class="col-4 m-auto "><!--adress section-->
+    <hr>
+    <adress id="location">
+      just up logan canyon on highway 89 Logan, UT 84321 call ahead for<!--adress-->
+      reservations (435)555-5555
+    </adress>
+    <hr>
+  </div><!-- end adress section-->
+    <img class=" fluid-img w-100 justify-content-center align-content-center" src="img/riverside_inn.jpg" alt="Riverside inn" /><!--banner img-->
+  </div><!--row end-->
+  </div><!--====================end .container for tagline, adress logo banner=================-->
+
+
+  <!--======================navbar=====================================-->
+  <!-- <section> -->
+      <!--start navabar button and title section if added-->
+      <nav class=" navbar navbar-expand-lg navbar-light  ">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span></button
+        ><!--end navbar button and title section if added-->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav"><!--puts elements at end of navbar and allows it to collapse-->
+          <!--Navbar list items-->
+          <ul class="navbar-nav img-fluid"><!--makes navbar fluid allowing it to grow and shrink proportional to screen size-->
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only"></span></a><!--takes you to home page-->
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" data-toggle="modal" data-target="#myMenu"
+                >Menu<span class="sr-only"></span></a><!--toggles modal-->
+            </li> 
+            <li class="nav-item"><!--contact link-->
+              <a class="nav-link" href="#contact">Contact<span class="sr-only"></span></a>
+            </li><!--end contact link-->
+            <li class="nav-item"><!--location link-->
+              <a class="nav-link" href="#location"
+                >location<span class="sr-only"></span></a>
+            </li><!--end location link-->
+            <li class="nav-item"><!--specials link-->
+              <a class="nav-link" href="#specials">Specials<span class="sr-only"></span></a>
+            </li><!--end specials link-->
+          </ul>
+        </div>
+      </nav> 
+    </header>
+  <!-- </section> -->
+  <!--======================================end header section================================================================-->
+        <!--======================end .navbar=====================================-->
+        <!--===================modal section=======================================================-->
+<!-- Modal -->
+  <div class="modal fade" id="myMenu" tabindex="-1" aria-labelledby="myMenu" aria-hidden="true"><!--myMenu links to the link tag in the header section and footer section-->
+    <div class="modal-dialog"><!--modal dialog-->
+      <div class="modal-content bg-light"><!--gives the modal a light gray color shade-->
+        <div class="modal-header border-success" id="mod-header"><!--apllies the modal header and gives the thin line a green color-->
+          <h2 class="modal-title text-center w-100 text-secondary font-weight-bold" id="#myMenu">Menu</h2><!--centers the header and gives text color and makes it bold.-->
+        </div><!--end modal header-->
+        <div class="modal-body text-secondary"><!--modal body gives text secondary color like gray allows application of grid container-->
+          <div class="container-fluid"><!--container for innner material. works with the modal body to allow use of normal grid elements inside the modal-->
+              <div class="row"><!--row start-->
+                <div class="col"><!--col start-->
+                  <h3>Burgers</h3>
+                  <h5>good old burger</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h5>mushroom burger</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div><!--col end-->
+                <div class="col"><!--col start-->
+                  <h3>Appetizers</h3>
+                  <h5>Chicken tenders</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h5>Onion blossom</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div><!--col end-->
+              </div><!--row end-->
+
+                <h2 class="text-center">dinner</h2><!---dinner break into two columns-->
+              <div class="row"><!--row start-->
+                <div class="col"><!--col start-->
+                  <h5>mushroom burger</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h5>mushroom burger</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h5>mushroom burger</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div><!--col end-->
+                <div class="col"><!--col start-->
+                  <h5>mushroom burger</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h5>mushroom burger</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h5>mushroom burger</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div><!--col end-->
+              </div><!--row end-->
+              <div class="row"><!--row start-->
+                <div class="col"><!--col start-->
+                  <h2>drinks</h2>
+                  <h5>mushroom burger</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h5>mushroom burger</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div><!--col end-->
+                <div class="col"><!--col start-->
+                  <h2>desserts</h2>
+                  <h5>mushroom burger</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h5>mushroom burger</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div><!--col end-->
+              </div><!--row end-->
+                <h2 type="button" class=" text-center text-secondary " data-dismiss="modal" aria-label="close" href="index.html">Home</h2><!--button made to close the modal -->
+            </div><!--end container fluid-->
+          </div><!--end modal body-->
+        </div><!--end modal content-->
+      </div><!--end modal dialog-->
+    </div><!--end modal fade id-->
+ 
+<!--========================Modal section ends===================================================-->
+        <!--==========================services==========================================================-->
+      <section class="text-secondary bg-light p-3"><!--gives a light background for the section and gives a paddin on all side of 3-->
+        <div class="container"><!--container starts-->
+          <div class="row"><!--row starts-->
+            <div class="col-md-8 order-2"><!--column starts and puts objects in certain order specified by number -->
+              <h2 class="text-center">Great food</h2><!--header centers text-->
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ornare lectus sit amet. Nullam vehicula ipsum a arcu cursus vitae. In nulla posuere sollicitudin aliquam. Urna nunc id cursus metus. Consectetur adipiscing elit duis tristique sollicitudin nibh sit. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius.
+                </p>
+            </div><!--end column-->
+            <div class="col-md-4 order-1"><!--column starts and puts objects in certain order specified by number -->
+              <img class="rounded-circle img-fluid" alt="great food" src="img/tasty_burger.jpg" />
+            </div><!--end column-->
+          </div><!--end row-->
+        </div><!--end container-->
+        <hr />
+        <div class="container"><!--container starts-->
+          <div class="row"><!--row starts-->
+            <div class="col-md-8 order-1"><!--column starts and puts objects in certain order  specified by number -->
+              <h2 class="text-center">Wedding services</h2><!--header centers text-->
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ornare lectus sit amet. Nullam vehicula ipsum a arcu cursus vitae. In nulla posuere sollicitudin aliquam. Urna nunc id cursus metus. Consectetur adipiscing elit duis tristique sollicitudin nibh sit. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius.
+              </p>
+            </div><!--end column-->
+            <div class="col-md-4 order-2"><!--column starts and puts objects in certain order specified by number -->
+              <img class="rounded-circle img-fluid" alt="wedding services" src="img/small_wedding_cake.jpg" />
+            </div>
+          </div><!--end row-->
+        </div>
+        <hr />
+        <div class="container"><!--container starts-->
+          <div class="row"><!--row starts-->
+            <div class="col-md-8 order-2"><!--column starts and puts objects in certain order specified by number -->
+              <h2 class="text-center">Lodging</h2><!--header centers text-->
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ornare lectus sit amet. Nullam vehicula ipsum a arcu cursus vitae. In nulla posuere sollicitudin aliquam. Urna nunc id cursus metus. Consectetur adipiscing elit duis tristique sollicitudin nibh sit. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius.
+              </p>
+            </div>><!--end column-->
+            <div class="col-md-4 order-1"><!--column starts and puts objects in certain order specified by number -->
+              <img class="rounded-circle img-fluid" alt="lodging" src="img/hotel_dinning_room.jpg" />
+            </div><!--end column-->
+          </div><!--end row-->
+        </div><!--end container-->
+      </section><!--end of section-->
+        <!--==========================end services==========================================================-->
+        <!--===========================special of the day=====================================================================-->
+    <section class="text-secondary" id="specials"><!--gives text a gay color and id of specials-->
+      <div class="container mt-2"><!--container starts-->
+          <div class="row"><!--row starts-->
+            <div class="col-3 order-0"><!--col starts-->
+              <img class="fluid-img w-100 mt-4 mb-4 mx-4" src="img/daily_special.png" alt="daily specials">
+            </div><!--col ends-->
+            <div class="col-6 justify-content-end align-content-center m-auto order-1"><!--col puts content on end and aligns it to center and gives a margin to center it and order-->
+        <h5 class="text-center">Special Of The Day</h5><!--header-->
+          <hr><!--break line-->
+          <p class="text-center">get a free appitizer with the purchase of two meals!</p><!--makes text center-->
+        </div><!--end col-->
+          </div><!--row ends-->
+      </div><!--container ends-->
+    </section><!--end of section-->
+        <!--===========================end special of the day=====================================================================-->
+        <!--=============contact section==========================================================================-->
+        <section class="bg-light text-secondary p-5" id="contact"><!--gives of light background and gray text and padding of 5-->
+          <div class="container">
+            <!--conatiner starts-->
+            <p class="lead">
+              questions? Do you need catering? Or just want to drop us a line? We'll
+              do our best to get back to you ASAP!
+            </p>
+            <div class="row">
+              <!--row starts--><!--row cols allow the container to shift over for smaller screens to allow better usabillty-->
+              <div class="col-12">
+                <!--First column starts-->
+                <form>
+                  <!--form start-->
+                  <div class="form-row">
+                    <!--form row for name and email starts here puts name and email into one row -->
+                    <div class="col form-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="name"
+                        id="fname"
+                        placeholder="your name"
+                      /><!--input field requiring name-->
+                    </div>
+                    <!--end .name-->
+    
+                    <div class="col form-group">
+                      <input
+                        class="form-control"
+                        type="email"
+                        name="email"
+                        id="femail"
+                        placeholder="your email"
+                      /><!--input field requiring email-->
+                    </div>
+                    <!---end .email-->
+                  </div>
+                  <!--form-row for name and email ends here-->
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      name="question"
+                      id="message"
+                      placeholder="Your message"
+                    ></textarea
+                    ><!--input field requiring message-->
+                  </div>
+                  <!--button-->
+                  <div class="text-right">
+                    <button class="btn bg-primary text-white" id="submit">
+                      send us a line >>
+                    </button>
+                  </div>
+                  <!--btn color green-->
+                  <!--button end-->
+                </form>
+                <!--form end-->
+              </div>
+              <!--first colum ends-->
+            </div>
+            <!--row ends-->
+          </div>
+          <!--conatiner ends-->
+        </section>
+        <!--=================================contact section end============================================================-->
+<!-- ===================footer================================= -->
+<footer>
+  <nav class=" navbar navbar-expand-lg navbar-light bg-light ">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span></button
+    ><!--end navbar button and title section if added-->
+    <div class="collapse navbar-collapse justify-content-start" id="navbarNav"><!--puts elements at end of navbar and allows it to collapse-->
+      <!--Navbar list items-->
+      <ul class="navbar-nav img-fluid"><!--makes navbar fluid allowing it to grow and shrink proportional to screen size-->
+        <li class="nav-item"><!--leads to home page-->
+          <a class="nav-link" href="#"
+            >Home <span class="sr-only"></span></a>
+        </li><!--leads to home page end -->
+
+        <li class="nav-item"><!--leads to menu modal -->
+          <a class="nav-link" data-toggle="modal" data-target="#myMenu" href="#myMenu"
+            >Menu<span class="sr-only"></span></a><!--toggles modal-->
+        </li> <!--leads to menu modal end-->
+
+        <li class="nav-item"><!--leads to contact page-->
+          <a class="nav-link" href="#contact">Contact<span class="sr-only"></span></a>
+        </li><!--leads to contact page end -->
+
+        <li class="nav-item"><!--leads to location page-->
+          <a class="nav-link" href="#location"
+            >location<span class="sr-only"></span></a>
+        </li><!--leads to location page end -->
+
+        <li class="nav-item"><!--leads to specails page-->
+          <a class="nav-link" href="#specials">Specials<span class="sr-only"></span></a>
+        </li><!--leads to specials page end-->
+      </ul>
+    </div>
+    <a class="navbar-brand text-secondary" href="#">BTECH Web Development</a><!--footer branding-->
+  </nav> 
+</footer>
+<!-- ===================end footer================================= -->
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
